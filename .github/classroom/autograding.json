@@ -1,0 +1,34 @@
+{
+  "tests": [
+    {
+      "name": "biblioteka1",
+      "setup": "",
+      "run": "python3 main.py",
+      "input": "1\r\n(\"Chatka Puchatka\", \"Alan Alexander Milne\", 1998)",
+      "output": "('Chatka Puchatka', 'Alan Alexander Milne', 1)",
+      "comparison": "exact",
+      "timeout": 10,
+      "points": 2
+    },
+    {
+      "name": "biblioteka2",
+      "setup": "",
+      "run": "python3 main.py",
+      "input": "3\r\n(\"Chatka Puchatka\", \"Alan Alexander Milne\", 1998)\r\n(\"Pan Tadeusz\", \"Adam Mickiewicz\", 2003)\r\n(\"Quo Vadis\", \"Henryk Sienkiewicz\", 2010)",
+      "output": "('Chatka Puchatka', 'Alan Alexander Milne', 1)\r\n('Pan Tadeusz', 'Adam Mickiewicz', 1)\r\n('Quo Vadis', 'Henryk Sienkiewicz', 1)\r\n",
+      "comparison": "exact",
+      "timeout": 10,
+      "points": 2
+    },
+    {
+      "name": "biblioteka3",
+      "setup": "",
+      "run": "python3 main.py",
+      "input": "5\r\n(\"Chatka Puchatka\", \"Alan Alexander Milne\", 2014)\r\n(\"Quo Vadis\", \"Henryk Sienkiewicz\", 2010)\r\n(\"Chatka Puchatka\", \"Alan Alexander Milne\", 1998)\r\n(\"Pan Tadeusz\", \"Adam Mickiewicz\", 2003)\r\n(\"Quo Vadis\", \"Henryk Sienkiewicz\", 2010)",
+      "output": "('Chatka Puchatka', 'Alan Alexander Milne', 2)\r\n('Pan Tadeusz', 'Adam Mickiewicz', 1)\r\n('Quo Vadis', 'Henryk Sienkiewicz', 2)\r\n",
+      "comparison": "exact",
+      "timeout": 10,
+      "points": 1
+    }
+  ]
+}
