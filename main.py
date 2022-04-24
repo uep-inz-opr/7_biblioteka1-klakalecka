@@ -22,7 +22,7 @@ class Biblioteka:
             self.czy_jest_w_liscie = False
         self.lista_ostateczna.sort(key=self.sortuj)
         for lista in self.lista_ostateczna:
-            print("('" + lista['tytul'].strip() + "'" + "," + "'" + lista['autor'].strip() + "', " + lista['ilosc_egzemplarzy'].strip() + ")")
+            print("('" + lista['tytul'].strip() + "'" + ", " + "'" + lista['autor'].strip() + "', " + lista['ilosc_egzemplarzy'].strip() + ")")
 
     def dodaj_egzemplarz_ksiazki(self, ksiazka):
         self.lista_ksiazek.append(ksiazka)
